@@ -22,8 +22,14 @@ a:hover {
 }
 
 ul {
-    list-style-type: square;
-    padding-left: 20px;
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+li {
+    margin: 0;
 }
 
 table {
