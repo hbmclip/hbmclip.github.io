@@ -63,12 +63,18 @@ table {
     border-collapse: collapse;
     margin: 20px 0;
     width: 100%;
+    font-size: 1rem;
 }
 
 th, td {
-    padding: 8px;
+    padding: 10px;
     text-align: left;
     border: 1px solid #ccc;
+}
+
+th {
+    background-color: #e0e0e0;
+    font-weight: bold;
 }
 
 /* Estilos para código */
@@ -109,11 +115,16 @@ pre {
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
     }
 
+    /* Tabela responsiva */
     table {
         font-size: 0.9rem;
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
     }
 
     th, td {
-        padding: 6px;
+        padding: 8px;
+        min-width: 120px; /* Evita colunas muito estreitas */
     }
 }
