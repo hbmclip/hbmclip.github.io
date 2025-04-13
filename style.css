@@ -83,6 +83,8 @@ pre {
     padding: 10px;
     border: 1px solid #ccc;
     overflow-x: auto;
+    font-size: 0.95rem;
+    white-space: pre-wrap; /* Permite quebra de linha longa */
 }
 
 /* Media Queries para responsividade */
@@ -126,5 +128,9 @@ pre {
     th, td {
         padding: 8px;
         min-width: 120px; /* Evita colunas muito estreitas */
+    }
+
+    pre {
+        font-size: 0.9rem;
     }
 }
