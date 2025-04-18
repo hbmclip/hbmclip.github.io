@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>hbmclip - Examples</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/assets/harbour.css">
 </head>
 <body>
+    <script src="/assets/harbour.js"></script>
+
     <header>
         <h1>hbmclip - Examples</h1>
     </header>
@@ -26,8 +29,14 @@
             
             <pre>
 hbmclip hello.prg
-
             </pre>
+            <div class="harbour">
+FUNCTION HelloWorld()
+    LOCAL name := "Your name"
+    ? "Hello, " + name
+RETURN NIL
+</div>
+
             <p>More examples coming soon!</p>
         </section>
     </main>
