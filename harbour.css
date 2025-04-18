@@ -1,0 +1,18 @@
+.harbour {
+  background-color: #1e1e1e;
+  color: #dcdcdc;
+  padding: 1em;
+  border-radius: 8px;
+  font-family: Consolas, Monaco, 'Courier New', monospace;
+  font-size: 0.95em;
+  white-space: pre;
+  overflow-x: auto;
+  border: 1px solid #333;
+  line-height: 1.5;
+}
+
+.harbour .keyword { color: #569cd6; font-weight: bold; }
+.harbour .string  { color: #ce9178; }
+.harbour .number  { color: #b5cea8; }
+.harbour .comment { color: #6a9955; font-style: italic; }
+.harbour .function-name { color: #dcdcaa; }
