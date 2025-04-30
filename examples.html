@@ -43,6 +43,11 @@ hbmclip hello.prg
              <pre>
 hbmclip https://raw.githubusercontent.com/hbmclip/cookbook/refs/heads/main/exec/exec01.prg
             </pre>
+
+            <h2>Docker example</h2>
+             <pre>
+docker run -it -v "$PWD:/mnt" hbmclip/hbmclip:latest main.prg --workdir /mnt 
+            </pre>
         </section>
     </main>
 </body>
