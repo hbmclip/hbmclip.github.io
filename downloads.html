@@ -64,6 +64,15 @@ apt install libmysqlclient-dev -y
                         <td>Windows (installer)</td>
                         <td><a href="bin/installHbmclip.exe">Setup/Install</a></td>
                     </tr>
+                    <tr>
+                        <td colspan="2">Docker
+                        <br>
+                        <pre>
+                            docker run -it -v "$PWD:/mnt" hbmclip/hbmclip:latest yourfile.prg --workdir /mnt 
+                        </pre>
+                        </td>
+         
+                    </tr>
                 </tbody>
             </table>
             <p><em>Note:</em> Linux users, make sure to chmod +x before running.</p>
