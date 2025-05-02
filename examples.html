@@ -46,6 +46,11 @@ hbmclip https://raw.githubusercontent.com/hbmclip/cookbook/refs/heads/main/exec/
 
             <h2>Docker example</h2>
              <pre>docker run -it -v "$PWD:/mnt" hbmclip/hbmclip:latest main.prg --workdir /mnt</pre>
+
+            <h2> Code from pipe</h2>
+            <pre>echo "FUNCTION Main; OutStd(1 + 1)" | hbmclip --mode pipe</pre>
+            
+            <pre>cat yourfile.prg | hbmclip --mode pipe</pre>
         </section>
     </main>
 </body>
