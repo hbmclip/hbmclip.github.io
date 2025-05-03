@@ -11,7 +11,7 @@
     <script src="harbour.js"></script>
 
     <header>
-        <h1>hbmclip - Examples</h1>
+        <h1>Examples - From programmer to programmer</h1>
     </header>
     
     <nav>
@@ -46,6 +46,12 @@ hbmclip https://raw.githubusercontent.com/hbmclip/cookbook/refs/heads/main/exec/
 
             <h2>Docker example</h2>
              <pre>docker run -it -v "$PWD:/mnt" hbmclip/hbmclip:latest main.prg --workdir /mnt</pre>
+
+            <h2> Code from pipe</h2>
+            <h3>Example 1</h3>
+            <pre>echo "FUNCTION Main; OutStd(1 + 1)" | hbmclip --mode pipe</pre>
+            <h3>Example 2</h3>
+            <pre>cat yourfile.prg | hbmclip --mode pipe</pre>
         </section>
     </main>
 </body>
