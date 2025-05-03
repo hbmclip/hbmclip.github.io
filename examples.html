@@ -47,11 +47,16 @@ hbmclip https://raw.githubusercontent.com/hbmclip/cookbook/refs/heads/main/exec/
             <h2>Docker example</h2>
              <pre>docker run -it -v "$PWD:/mnt" hbmclip/hbmclip:latest main.prg --workdir /mnt</pre>
 
-            <h2> Code from pipe</h2>
+            <h2>Code from pipe</h2>
             <h3>Example 1</h3>
             <pre>echo "FUNCTION Main; OutStd(1 + 1)" | hbmclip --mode pipe</pre>
             <h3>Example 2</h3>
             <pre>cat yourfile.prg | hbmclip --mode pipe</pre>
+            <h2>Code inside html (or another file type)</h2>
+            <h3>Example 1</h3>
+            <pre>hbmclip --filename https://hbmclip.github.io/poem.html --tag-source "&lt;poem&gt;"</pre>
+            * Use --filename when extension is not .prg
+            <br>** The parameter --tag-source inform tag name where code is included.
         </section>
     </main>
 </body>
