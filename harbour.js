@@ -21,3 +21,38 @@ document.addEventListener("DOMContentLoaded", function () {
     el.innerHTML = code;
   });
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const pres = document.querySelectorAll("pre");
+
+  pres.forEach(pre => {
+    const wrapper = document.createElement("div");
+    wrapper.className = "pre-wrapper";
+
+    const button = document.createElement("button");
+    button.className = "copy-button";
+    button.textContent = "📋";
+    button.onclick = function () {
+      copyToClipboard(pre, button);
+    };
+
+    pre.parentNode.insertBefore(wrapper, pre);
+    wrapper.appendChild(button);
+    wrapper.appendChild(pre);
+  });
+});
+
+function copyToClipboard(preElement, button) {
+  const text = preElement.innerText;
+  navigator.clipboard.writeText(text).then(() => {
+    button.textContent = '✅';
+    setTimeout(() => {
+      button.textContent = '📋';
+    }, 1500);
+  }).catch(err => {
+    console.error('Erro ao copiar:', err);
+    button.textContent = '❌';
+  });
+}
+
