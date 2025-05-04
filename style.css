@@ -78,14 +78,42 @@ th {
 }
 
 /* Estilos para código */
+/* Mantém sua configuração original */
 pre {
-    background-color: #e0e0e0;
-    padding: 10px;
-    border: 1px solid #ccc;
-    overflow-x: auto;
-    font-size: 0.95rem;
-    white-space: pre-wrap; /* Permite quebra de linha longa */
+  background-color: #e0e0e0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  overflow-x: auto;
+  font-size: 0.95rem;
+  white-space: pre-wrap; /* Permite quebra de linha longa */
+  border-radius: 6px; /* Adiciona um toque mais moderno */
 }
+
+/* Adiciona o contêiner do botão */
+.pre-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+/* Botão de cópia */
+.copy-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: #eee;
+  border: none;
+  padding: 5px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  z-index: 1;
+  transition: background 0.3s;
+}
+
+.copy-button:hover {
+  background: #ddd;
+}
+
 
 /* Media Queries para responsividade */
 @media screen and (max-width: 600px) {
