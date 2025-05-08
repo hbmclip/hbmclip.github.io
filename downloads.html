@@ -17,6 +17,7 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="examples.html">Examples</a></li>
             <li><a href="downloads.html">Downloads</a></li>
+            <li><a href="links.html">Links</a></li>
         </ul>
     </nav>
     
@@ -46,7 +47,18 @@ apt install libx11-dev -y
 apt install libmysqlclient-dev -y
             </pre>
                         </td>
+                        
                         <td><a href="bin/hbmclip">hbmclip</a></td>
+                    </tr>
+                    <tr>
+                        <td>Linux (deb package)<br>
+                        <pre>
+To install : sudo apt install -f ./hbmclip_1.0-amd64.deb
+To remove  : sudo apt remove hbmclip
+            </pre>
+                        </td>
+                        
+                        <td><a href="bin/hbmclip_1.0-amd64.deb">hbmclip.deb</a></td>
                     </tr>
   <tr>
                         <td>Linux (installer)</td>
@@ -64,6 +76,21 @@ apt install libmysqlclient-dev -y
                         <td>Windows (installer)</td>
                         <td><a href="bin/installHbmclip.exe">Setup/Install</a></td>
                     </tr>
+                    <tr>
+                        <td colspan="2">Docker 
+                        <br>
+                        <pre>docker run -it -v "$PWD:/mnt" hbmclip/hbmclip:latest yourfile.prg --workdir /mnt</pre>
+                       
+                        
+                         
+                        <br> Windows users must be change $PWD to %CD%
+                            <pre>docker run -it -v "%CD%:/mnt" hbmclip/hbmclip:latest yourfile.prg --workdir /mnt</pre>
+                            <br>Install docker with <pre>sudo apt install docker.io</pre>
+                        </td>
+                        
+         
+                    </tr>
+                                    
                 </tbody>
             </table>
             <p><em>Note:</em> Linux users, make sure to chmod +x before running.</p>

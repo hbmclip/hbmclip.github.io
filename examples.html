@@ -11,7 +11,7 @@
     <script src="harbour.js"></script>
 
     <header>
-        <h1>hbmclip - Examples</h1>
+        <h1>Examples - From programmer to programmer</h1>
     </header>
     
     <nav>
@@ -20,6 +20,7 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="examples.html">Examples</a></li>
             <li><a href="downloads.html">Downloads</a></li>
+            <li><a href="links.html">Links</a></li>            
         </ul>
     </nav>
     
@@ -41,8 +42,22 @@ hbmclip hello.prg
 
             <h2>Remote code</h2>
              <pre>
-hbmclip https://raw.githubusercontent.com/hbmclip/cookbook/refs/heads/main/exec/exec01.prg
+hbmclip https://raw.githubusercontent.com/hbmclip/hbmclip.github.io/refs/heads/main/cookbook/exec/exec01.prg
             </pre>
+
+            <h2>Docker example</h2>
+             <pre>docker run -it -v "$PWD:/mnt" hbmclip/hbmclip:latest main.prg --workdir /mnt</pre>
+
+            <h2>Code from pipe</h2>
+            <h3>Example 1</h3>
+            <pre>echo "FUNCTION Main; OutStd(1 + 1)" | hbmclip --mode pipe</pre>
+            <h3>Example 2</h3>
+            <pre>cat yourfile.prg | hbmclip --mode pipe</pre>
+            <h2>Code inside html (or another file type)</h2>
+            <h3>Example 1 - <a href="https://hbmclip.github.io/poem.html" target=_new>https://hbmclip.github.io/poem.html</a></h3>
+            <pre>hbmclip --filename https://hbmclip.github.io/poem.html --tag-source "&lt;poem&gt;"</pre>
+            * Use --filename when extension is not .prg
+            <br>** The parameter --tag-source inform tag name where code is included.
         </section>
     </main>
 </body>
