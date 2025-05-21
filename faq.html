@@ -38,7 +38,11 @@ docker run --entrypoint /bin/bash -it hbmclip/hbmclip
             <br>Run your container
             <pre>docker run -it hbmclip/hbmclip:latest --about
 </pre>
-
+             <h3>Using web server</h3>
+             You need mapping ports:
+             <pre>
+                 docker run -it -v "$PWD:/mnt" -p 8082:8082 hbmclip/hbmclip:latest --mode filesystemweb
+             </pre>
         </section>
     </main>
 </body>
