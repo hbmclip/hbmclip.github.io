@@ -33,13 +33,13 @@ docker run --entrypoint /bin/bash -it hbmclip/hbmclip
             </pre>
 
             <h3>How to update hbmclip container ?</h3>
-            <br>First, remove image and container
+            <br>First, remove image and container.
             <pre>docker image rm -f hbmclip/hbmclip</pre>
-            <br>Run your container
+            <br>Run your container.
             <pre>docker run -it hbmclip/hbmclip:latest --about
 </pre>
              <h3>Using web server</h3>
-             You need mapping ports:
+             <br>You need map your ports  with -p parameter.
              <pre>
                  docker run -it -v "$PWD:/mnt" -p 8082:8082 hbmclip/hbmclip:latest --mode filesystemweb
              </pre>
